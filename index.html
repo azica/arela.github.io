@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<title>Arela</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!--HEADER-->
+		<header class="header">
+			<div class="header_top top-header">
+				<div class="top-header container">
+					<div class="top-header__contacts contacts">
+						<a class="contacts__link contacts__phone" href="#"><span>125-668-886</span></a>
+						<a class="contacts__link contacts__mail" href="mailto:suppor@gmail.com"><span>suppor@gmail.com</span></a>
+					</div>
+					<div class="top-header__social social">
+						<a class="social__link" href="#"><i class="fab fa-facebook-f"></i></a>
+						<a class="social__link" href="#"><i class="fab fa-twitter"></i></a>
+						<a class="social__link" href="#"><i class="fab fa-google"></i></a>
+						<a class="social__link" href="#"><i class="fab fa-instagram"></i></a>
+						<a class="social__link " href="#"><i class="fab fa-pinterest"></i></a>
+					</div>
+					<div class="top-header__actions actions">
+						<a href="#" class="actions__link login"><span>Login</span></a>
+						<a href="#" class="actions__link sign"><span> / Sign up</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom botom-header">
+				<div class="botom-header container">
+					<div class="logo anim-items anim-hide">
+						<picture class="logo__icon">
+							 <source  srcset="img/logo.svg" media="(min-width: 465px)">
+							<source media="( max-width: 420px)" srcset="img/mobile_logo.svg"> 
+							<img src="img/logo.svg" alt="logo">
+						  </picture>
+						<div class="logo__text">rela</div>
+					</div>
+					<div class="toggle-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+						<!-- MAIN MENU  -->
+					<nav class="header__menu menu">
+						<ul class="menu__list">
+							<li><a class="menu__link menu__link-active" href="index.html">home</a></li>
+							<li><a class="menu__link" href="about.html">about</a></li>
+							<li><a class="menu__link" href="#">property</a>
+								<span class="menu__arrow arrow"></span>
+                                <ul class="sub-menu__list">
+                                    <li><a href="property-list.html" class="sub-menu__link">Property List</a></li>
+                                    <li><a href="property-detail.html" class="sub-menu__link">Property Detail</a></li>
+									<li><a href="#" class="sub-menu__link">Property Grid</a>
+										<span class="sub-menu__arrow arrow"></span>
+                                        <ul class="sub-sub-menu__list">
+                                            <li><a href="#" class="sub-sub-menu__link">property2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">property2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">property2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">property2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">property2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+							<li><a class="menu__link" href="agents.html">agents</a></li>
+							<li><a class="menu__link" href="real-estate.html">real estate</a></li>
+							<li><a class="menu__link" href="">testimonial</a>
+								<span class="menu__arrow arrow"></span>
+                                <ul class="sub-menu__list">
+                                    <li><a href="testimonial.html" class="sub-menu__link">testimonial</a></li>
+                                    <li><a href="#" class="sub-menu__link">testimonial1.1</a></li>
+									<li><a href="#" class="sub-menu__link">testimonial1.1</a>
+										<span class="sub-menu__arrow arrow"></span>
+                                        <ul class="sub-sub-menu__list">
+                                            <li><a href="#" class="sub-sub-menu__link">testimonial2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">testimonial2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">testimonial2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">testimonial2.2</a></li>
+                                            <li><a href="#" class="sub-sub-menu__link">testimonial2.2</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+							<li><a class="menu__link" href="contacts.html">contact</a></li>					
+                        </ul>
+					</nav>
+					<a class="header__submit-btn" href="property-submit.html">submit property</a>
+				</div>
+			</div>
+		</header>
+		<!-- MAIN SLIDER -->
+		<section class="header__slider-section">
+			<div class="header__slider slider">
+				<div class="slider__item1">
+					<div class="slider__content">		
+							<div class="slider__inner">
+								<div class="slider__tab tab">
+									<div class="tab">
+										<!-- Tab links -->
+										<nav class="tab__nav">
+											<a href="#" class="tab__nav-item active" onclick="tabFunc(event, 'tab-1')">for rent</a>
+											<a href="#" class="tab__nav-item" onclick="tabFunc(event, 'tab-2')">for sale</a>
+										</nav>
+										<!-- Tab content -->
+										<div class="tab__contents">
+											<div class="tab__content active" id="tab-1"> 
+												<form action="" class="slider-search__form form__range-slider">
+													<div class="range-slider form">
+														<span class="example-val" id="form__range-slider-label">Size [ 300 - 1,000 ] SqFt</span>
+														<div id="form__range-slider-value"></div>
+													</div>
+													<div class="select__wrapper">
+														<select name="" id=" " class="custom-select">
+															<option value="" >All cities1</option>
+															<option value="">All cities2</option>
+															<option value="">All cities3</option>
+															<option value="">All cities4</option>
+															<option value="">All cities5</option>
+														</select>
+														<select name="" id=""  class="custom-select">
+															<option class="color" value="">All countries1</option>
+															<option class="color" value="">All countries2</option>
+															<option class="color" value="">All countries3</option>
+															<option class="color" value="">All countries4</option>
+															<option class="color" value="">All countries5</option>
+														</select>
+														<select name="" id="" class="custom-select">
+															<option value="">All type1</option>
+															<option value="">All type2</option>
+															<option value="">All type3</option>
+															<option value="">All type4</option>
+															<option value="">All type5</option>
+														</select>
+														<select name="" id="" class="custom-select">
+															<option value="">Any bedroom</option>
+															<option value="">Any bedroom</option>
+															<option value="">Any bedroom</option>
+															<option value="">Any bedroom</option>
+															<option value="">Any bedroom</option>
+														</select>
+														<select name="" id="" class="custom-select">
+															<option value="">Any bathroom</option>
+															<option value="">Any bathroom</option>
+															<option value="">Any bathroom</option>
+															<option value="">Any bathroom</option>
+															<option value="">Any bathroom</option>
+														</select>
+													</div>
+													<button class="btn form__btn">search</button>
+													<div class="featers">
+
+													</div>
+												</form>
+											</div>
+											<div class="tab__content" id="tab-2">
+												<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, earum doloribus corporis aspernatur ullam explicabo quaerat dolores placeat, ipsa, enim cupiditate? Error quos tempora neque similique sapiente voluptatum aspernatur amet.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slider__headings">
+									<h5 class="anim-items anim-hide">click or call we do it all</h5>
+									<h1  class="anim-items anim-hide">experienced in saving you money</h1>
+									<a href="" class="slider__btn btn">contact us</a>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="slider__item2">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit omnis similique laboriosam, voluptatibus a repudiandae ipsa doloribus voluptatum obcaecati veritatis. At maxime distinctio fugit aliquid, sit voluptate fuga ut cumque!</p>
+				</div>
+			</div>
+		</section>
+		<!-- TEAM SECTION -->
+		<section class="team__section"> 
+			<div class="container">
+				<div class="team__inner">
+					<div class="section__headings">
+						<a href=""><h6>our team</h6></a>
+						<a href=""><h1>our counselor</h1></a>
+					</div>
+					<a href="" class="btn btn-border btn-icon">all counselor</a>
+				</div>
+				<div class="team__slider">
+					<div class="team__slider-item">
+						<div class="team__cart">
+							<a href="" class="team__img">
+								<img src="img/team/05.png" alt="">	
+							</a>
+							<div class="team__body">
+								<a href="" class="team__name">ashton kutcher</a>
+								<div class="team__position">Founder $CEO</div>
+								<div class="team__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aliquam!</div>
+								<a href="" class="team__number">123-455-688</a>
+							</div>	
+						</div>
+					</div>
+					<div class="team__slider-item">
+						<div class="team__cart">
+							<a class="team__img" href="">
+								<img src="img/team/07.png" alt="">
+							</a>
+							<div class="team__body">
+								<a href="" class="team__name">ashton kutcher</a>
+								<div class="team__position">Founder $CEO</div>
+								<div class="team__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aliquam!</div>
+								<a href="" class="team__number">123-455-688</a>
+							</div>	
+						</div>
+					</div>
+					<div class="team__slider-item">
+						<div class="team__cart">
+							<a class="team__img" href="">
+								<img src="img/team/07.png" alt="">
+							</a>
+							<div class="team__body">
+								<a href="" class="team__name">ashton kutcher</a>
+								<div class="team__position">Founder $CEO</div>
+								<div class="team__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aliquam!</div>
+								<a href="" class="team__number">123-455-688</a>
+							</div>	
+						</div>
+					</div>
+					<div class="team__slider-item">
+						<div class="team__cart">
+							<a class="team__img" href="">
+								<img src="img/team/03.png" alt="">
+							</a>
+							<div class="team__body">
+								<a href="" class="team__name">ashton kutcher</a>
+								<div class="team__position">Founder $CEO</div>
+								<div class="team__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, aliquam!</div>
+								<a href="" class="team__number">123-455-688</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> 
+		<!-- CHOOSE SECTION -->
+		  <section class="choose__section">  
+			<div class="container">
+				<div class="choose__inner">
+					<div class="section__headings">
+						<a href=""><h6>always satisfied</h6></a>
+						<a href=""><h1>why choose us ?</h1></a>
+					</div>
+					<a href="" class="btn btn-border">submit property</a>
+				</div>
+				<div class="choose__carts">
+					<div class="choose__cart anim-items anim-hide">
+						<div class="choose__name">Search Property from
+							Anywhere</div>
+						<p class="choose__descr">Lorem ipsum dolor sit amet, consectetur adipiscing. Sed at nisi auctor nascetur ridiculus mus.</p>
+					</div>
+					<div class="choose__cart anim-items anim-hide">
+						<div class="choose__name">Buy and Sell Awesome
+							Property</div>
+						<p class="choose__descr">Lorem ipsum dolor sit amet, consectetur adipiscing. Sed at nisi auctor nascetur ridiculus mus.</p>
+					</div>
+					<div class="choose__cart anim-items anim-hide">
+						<div class="choose__name">Professional & Friendly
+							Agents</div>
+						<p class="choose__descr">Lorem ipsum dolor sit amet, consectetur adipiscing. Sed at nisi auctor nascetur ridiculus mus.</p>
+					</div>
+				</div>
+			</div>
+		</section> 
+		<!-- PRODUCT SECTION -->
+		<section class="product__section"> 
+			<div class="product__slider">
+				<div class="product__item">
+					<a href="#" class="product__img" ><img src="img/products/01.jpg" alt=""></a>
+					<div class="product__labels">
+						<a href="" class="product__name">restaurant</a>
+						<a href="" class="product__properties">38 properties</a>
+					</div>
+				</div>
+				<div class="product__item">
+					<a href="#" class="product__img" ><img src="img/products/02.jpg" alt=""></a>
+					<div class="product__labels">
+						<a href="" class="product__name">Apatment</a>
+						<a href="" class="product__properties">38 properties</a>
+					</div>
+				</div>
+				<div class="product__item">
+					<a href="#" class="product__img" ><img src="img/products/03.jpg" alt=""></a>
+					<div class="product__labels">
+						<a href="" class="product__name">house</a>
+						<a href="" class="product__properties">38 properties</a>
+					</div>
+				</div>
+				<div class="product__item">
+					<a href="#" class="product__img" ><img src="img/products/04.jpg" alt=""></a>
+					<div class="product__labels">
+						<a href="" class="product__name">villa</a>
+						<a href="" class="product__properties">38 properties</a>
+					</div>
+				</div>
+				<div class="product__item">
+					<a href="#" class="product__img" ><img src="img/products/05.jpg" alt=""></a>
+					<div class="product__labels">
+						<a href="" class="product__name">Apatment</a>
+						<a href="" class="product__properties">38 properties</a>
+					</div>
+				</div>
+				<div class="product__item">
+					<a href="#" class="product__img" ><img src="img/products/05.jpg" alt=""></a>
+					<div class="product__labels">
+						<a href="" class="product__name">Apatment</a>
+						<a href="" class="product__properties">38 properties</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- POPULAR SECTION-->
+		<section class="popular__section">
+			<div class="container">
+				<div class="popular__inner">
+					<div class="section__headings">
+						<a href=""><h6>Find your house in your city</h6></a>
+						<a href=""><h1>Popular property</h1></a>
+					</div>
+					<a href="" class="btn btn-border">all properties</a>
+				</div>
+				<div class="popular__items-wrapper">
+					<div class="popular__item item anim-items anim-hide">
+						<div class="item__img">
+							<a href=""><img src="img/popular/01.png" alt=""></a>
+							<div class="item__img-hovers">
+								<a class="item__img-hover" href=""><i class="fas fa-heart"></i></a>
+								<a class="item__img-hover" href=""><i class="fas fa-sync-alt"></i></a>
+							</div>
+						</div>
+						<div class="item__aside">
+							<div class="item__labels">
+								<div class="item__label sold">for sold</div>
+								<a href="" class="item__price">$ 289.0</a>
+							</div>
+							<div class="item__title">Home in Merrick Way</div>
+							<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>	
+							<ul class="item__signs">
+								<li><i class="fas fa-square"></i>2.283</li>
+								<li><i class="fa fa-bath"></i>03</li>
+								<li><i class="fa fa-bed"></i>05</li>
+								<li><i class="fa fa-car"></i>01</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popular__item item anim-items anim-hide">
+						<div class="item__img">
+							<a href=""><img src="img/popular/01.png" alt=""></a>
+							<div class="item__img-hovers">
+								<a class="item__img-hover" href=""><i class="fas fa-heart"></i></a>
+								<a class="item__img-hover" href=""><i class="fas fa-sync-alt"></i></a>
+							</div>
+						</div>
+						<div class="item__aside">
+							<div class="item__labels">
+								<div class="item__label sold">for sold</div>
+								<a href="" class="item__price">$ 289.0</a>
+							</div>
+							<div class="item__title">Home in Merrick Way</div>
+							<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>	
+							<ul class="item__signs">
+								<li><i class="fas fa-vector-square"></i>2.283</li>
+								<li><i class="fa fa-bath"></i>03</li>
+								<li><i class="fa fa-bed"></i>05</li>
+								<li><i class="fa fa-car"></i>01</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popular__item item anim-items anim-hide">
+						<div class="item__img">
+							<a href=""><img src="img/popular/02.png" alt=""></a>
+							<div class="item__img-hovers">
+								<a class="item__img-hover" href=""><i class="fas fa-heart"></i></a>
+								<a class="item__img-hover" href=""><i class="fas fa-sync-alt"></i></a>
+							</div>
+						</div>
+						<div class="item__aside">
+							<div class="item__labels">
+								<div class="item__label sale">for sold</div>
+								<a href="" class="item__price">$ 289.0</a>
+							</div>
+							<div class="item__title">Home in Merrick Way</div>
+							<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>	
+							<ul class="item__signs">
+								<li><i class="fas fa-vector-square"></i>2.283</li>
+								<li><i class="fa fa-bath"></i>03</li>
+								<li><i class="fa fa-bed"></i>05</li>
+								<li><i class="fa fa-car"></i>01</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popular__item item anim-items anim-hide">
+						<div class="item__img">
+							<a href=""><img src="img/popular/03.png" alt=""></a>
+							<div class="item__img-hovers">
+								<a class="item__img-hover" href=""><i class="fas fa-heart"></i></a>
+								<a class="item__img-hover" href=""><i class="fas fa-sync-alt"></i></a>
+							</div>
+						</div>
+						<div class="item__aside">
+							<div class="item__labels">
+								<div class="item__label sale">for sold</div>
+								<a href="" class="item__price">$ 289.0</a>
+							</div>
+							<div class="item__title">Home in Merrick Way</div>
+							<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>	
+							<ul class="item__signs">
+								<li><i class="fas fa-vector-square"></i>2.283</li>
+								<li><i class="fa fa-bath"></i>03</li>
+								<li><i class="fa fa-bed"></i>05</li>
+								<li><i class="fa fa-car"></i>01</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popular__item item anim-items anim-hide">
+						<div class="item__img">
+							<a href=""><img src="img/popular/02.png" alt=""></a>
+							<div class="item__img-hovers">
+								<a class="item__img-hover" href=""><i class="fas fa-heart"></i></a>
+								<a class="item__img-hover" href=""><i class="fas fa-sync-alt"></i></a>
+							</div>
+						</div>
+						<div class="item__aside">
+							<div class="item__labels">
+								<div class="item__label rent">for sold</div>
+								<a href="" class="item__price">$ 289.0</a>
+							</div>
+							<div class="item__title">Home in Merrick Way</div>
+							<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>	
+							<ul class="item__signs">
+								<li><i class="fas fa-vector-square"></i>2.283</li>
+								<li><i class="fa fa-bath"></i>03</li>
+								<li><i class="fa fa-bed"></i>05</li>
+								<li><i class="fa fa-car"></i>01</li>
+							</ul>
+						</div>
+					</div>
+					<div class="popular__item item anim-items anim-hide">
+						<div class="item__img">
+							<a href=""><img src="img/popular/03.png" alt=""></a>
+							<div class="item__img-hovers">
+								<a class="item__img-hover" href=""><i class="fas fa-heart"></i></a>
+								<a class="item__img-hover" href=""><i class="fas fa-sync-alt"></i></a>
+							</div>
+						</div>
+						<div class="item__aside">
+							<div class="item__labels">
+								<div class="item__label rent">for sold</div>
+								<a href="" class="item__price">$ 289.0</a>
+							</div>
+							<div class="item__title">Home in Merrick Way</div>
+							<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>	
+							<ul class="item__signs">
+								<li><i class="fas fa-vector-square"></i>2.283</li>
+								<li><i class="fa fa-bath"></i>03</li>
+								<li><i class="fa fa-bed"></i>05</li>
+								<li><i class="fa fa-car"></i>01</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- FEATURE SECTION -->
+		<section class="feature__section">
+			<div class="container">
+				<div class="feature__slider slider">
+					<div class="feature__item">
+						<div class="section__headings">
+							<a href=""><h6>Feature property</h6></a>
+							<a href=""><h1 class="feature__title">Funky Little Forest Hills</h1></a>
+						</div>
+						<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>
+						<div class="item__labels">
+						<div class="item__label rent">for sold</div>
+							<a href="" class="item__price">$ 289.0 <span>month</span></a>
+						</div>
+						<p>Temporibus autem quibusdam et aut officiis debitis is aut rerum necessitatibus saepes eveniet ut etes seo lage voluptates repudiandae sint et molestiae through building presservation etes quibusdam.</p>	
+						<ul class="item__signs">
+							<li><i class="fas fa-square"></i>2.283 <span>Sq Ft</span></li>
+							<li><i class="fa fa-car"></i><i class="fas fa-check"></i> <span>parking</span></li>
+							<li><i class="fa fa-bath"></i>03 <span>bath</span></li>
+							<li><i class="fa fa-bed"></i>05 <span>bed</span></li>
+						</ul>
+						<ul class="item__author author">
+							<li>
+								<div class="author__wrap author__wrap-width">
+									<img src="img/team/07.png" alt="">
+									<a href="#" class="author__name">Ashton Kutcher</a> 
+								</div>
+							</li>
+							<li>
+								<div class="author__wrap">
+								  <a href="#" class="author__number">123-455-688</a>  
+								</div>
+							</li>
+							<li>
+								<div class="author__wrap">
+									<a class="author__link" href="#"><i class="fab fa-facebook-f"></i></a>
+									<a class="author__link" href="#"><i class="fab fa-twitter"></i></a>
+									<a class="author__link" href="#" ><i class="fas fa-envelope"></i></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="feature__item">
+						<div class="section__headings">
+							<a href=""><h6>Feature property</h6></a>
+							<a href=""><h1 class="feature__title">Funky Little Forest Hills</h1></a>
+						</div>
+						<div class="item__location"><i class="fas fa-map-marker-alt"></i>3 Middle Winchendon Rd, Rindge, NH 034</div>
+						<div class="item__labels">
+						<div class="item__label rent">for sold</div>
+							<a href="" class="item__price">$ 289.0 <span>month</span></a>
+						</div>
+						<p>Temporibus autem quibusdam et aut officiis debitis is aut rerum necessitatibus saepes eveniet ut etes seo lage voluptates repudiandae sint et molestiae through building presservation etes quibusdam.</p>	
+						<ul class="item__signs">
+							<li><i class="fas fa-vector-square"></i>2.283 <span>Sq Ft</span></li>
+							<li><i class="fa fa-car"></i><i class="fas fa-check"></i> <span>parking</span></li>
+							<li><i class="fa fa-bath"></i>03 <span>bath</span></li>
+							<li><i class="fa fa-bed"></i>05 <span>bed</span></li>
+						</ul>
+						<ul class="item__author author">
+							<li>
+								<div class="author__wrap author__wrap-width">
+									<img src="img/team/07.png" alt="">
+									<a href="#" class="author__name">Ashton Kutcher</a> 
+								</div>
+							</li>
+							<li>
+								<div class="author__wrap">
+								  <a href="#" class="author__number">123-455-688</a>  
+								</div>
+							</li>
+							<li>
+								<div class="author__wrap">
+									<a class="author__link" href="#"><i class="fab fa-facebook-f"></i></a>
+									<a class="author__link" href="#"><i class="fab fa-twitter"></i></a>
+									<a class="author__link" href="#" ><i class="fas fa-envelope"></i></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--TESTIMONIAL SECTION  -->
+		<section class="testimonial__section">
+			<div class="container">
+				<div class="testimonial__inner">
+					<div class="section__headings">
+						<a href=""><h6>client say</h6></a>
+						<a href=""><h1>testimonial</h1></a>
+					</div>
+				</div>
+				<div class="testimonial__slider slider">
+					<div class="slider__item">
+						<div class="slider__item-top">
+							<p>Lorem ipsum doloramet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lacus vel facilisis. ;</p>
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+						<div class="slider__item-bottom">
+							<a href="" class="slider__img"><img src="img/team/01.png" alt=""></a>
+							<div>
+								<div class="slider__name">Peter Dutton</div>
+								<div class="slider__position">Designer</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__item-top">
+							<p>Lorem ipsum doloramet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lacus vel facilisis. ;</p>
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+						<div class="slider__item-bottom">
+							<a href="" class="slider__img"><img src="img/team/04.png" alt=""></a>
+							<div>
+								<div class="slider__name">Peter Dutton</div>
+								<div class="slider__position">Designer</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__item-top">
+							<p>Lorem ipsum doloramet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lacus vel facilisis. ;</p>
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+						<div class="slider__item-bottom">
+							<a href="" class="slider__img"><img src="img/team/02.png" alt=""></a>
+							<div>
+								<div class="slider__name">Peter Dutton</div>
+								<div class="slider__position">Designer</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider__item">
+						<div class="slider__item-top">
+							<p>Lorem ipsum doloramet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lacus vel facilisis. ;</p>
+							<div class="rating">
+								<input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+								<input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+								<input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+								<input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+								<input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+							</div>
+						</div>
+						<div class="slider__item-bottom">
+							<a href="" class="slider__img"><img src="img/team/03.png" alt=""></a>
+							<div>
+								<div class="slider__name">Peter Dutton</div>
+								<div class="slider__position">Designer</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- BRANDS SECTION -->
+		<section class="brands__section">
+			<div class="container">
+				<div class="brands__slider">
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand01.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand02.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand03.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand04.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand05.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand06.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand04.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand05.svg" alt=""></a>
+					</div>
+					<div class="brands__item">
+						<a href="" class="brands__img"><img src="img/brands/brand06.svg" alt=""></a>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<!-- BANNER SECTION -->
+		<section class="banner__section">
+			<div class="parallax">
+				<div class="container">
+					<div class="banner__title">Buy or sell your home with
+						a few simple steps</div>
+					<button class="btn btn-light">submit property</button>
+					<button class="btn btn-border">browse property</button>
+				</div>
+			</div>
+		
+		</section>
+		<!-- POST SECTION -->
+		<section class="post__section">
+			<div class="container">
+				<div class="section__headings">
+						<a href=""><h6>Latest posts</h6></a>
+						<a href=""><h1>News & Stories</h1></a>
+					</div>
+				<div class="post__inner">
+					<article class="post__cart">
+						<a href="" class="post__img"><img  src="img/post/01.png" alt=""></a>
+						<div class="post__content">
+							<a class="post__title" href="">The Real-Estate Developers Are
+								the Enemy</a>
+							<ul class="post__list">
+								<li><a href="">by Admin</a></li>
+								<li><a href="">Jan 09, 2019</a></li>
+								<li><a href="">12 Comment</a></li>
+							</ul>
+							<p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor labore...</p>
+						</div>
+					</article>
+					<article class="post__cart">
+						<a href="" class="post__img"><img  src="img/post/02.png" alt=""></a>
+						<div class="post__content">
+							<a class="post__title" href="">The Real-Estate Developers Are
+								the Enemy</a>
+							<ul class="post__list">
+								<li><a href="">by Admin</a></li>
+								<li><a href="">Jan 09, 2019</a></li>
+								<li><a href="">12 Comment</a></li>
+							</ul>
+							<p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor labore...</p>
+						</div>
+					</article>
+					<article class="post__cart">
+						<a href="" class="post__img"><img  src="img/post/03.png" alt=""></a>
+						<div class="post__content">
+							<a class="post__title" href="">The Real-Estate Developers Are
+								the Enemy</a>
+							<ul class="post__list">
+								<li><a href="">by Admin</a></li>
+								<li><a href="">Jan 09, 2019</a></li>
+								<li><a href="">12 Comment</a></li>
+							</ul>
+							<p class="post__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor labore...</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!-- FOOTER -->
+		 <footer class="footer">
+			 <div class="top-footer">
+				<div class="container">
+					<div class="top-footer__row">
+						<div class="top-footer__column">
+							<div class="top-footer__subscribe">Subscribe Newsletter</div>
+							<p class="top-footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+						</div>
+						<div class="top-footer__column">
+							<div class="top-footer__input">
+								<input type="email" placeholder="Your email">
+								<button class="btn btn-subscribe">Subscribe</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+					<div class="container">
+					<div class="bottom-footer__row">
+						<div class="bottom-footer__column">
+							<a href="index.html" class="logo">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="51" viewBox="0 0 66 51"><defs><path id="2le3a" d="M393.36 6209.51v-9.78l13.85-6.1 14.26 6.1v9.78h18.73l-14.66-22.4s-19.06-4.18-36.25 0l-14.66 22.4z"/><path id="2le3b" d="M403.32 6209.33v-5.3l4.9-2.85 5.29 2.44v5.7z"/><path id="2le3c" d="M394.03 6180.19l13.59-20.89 14.59 20.89z"/></defs><g><g transform="translate(-374 -6159)"><use fill="#fff" xlink:href="#2le3a"/></g><g transform="translate(-374 -6159)"><use fill="#0046d4" xlink:href="#2le3b"/></g><g transform="translate(-374 -6159)"><use fill="#0046d4" xlink:href="#2le3c"/></g></g></svg>
+								<div class="logo-text">rela</div>
+							</a>
+						</div>
+						<div class="bottom-footer__column">
+							<div class="footer__social social">
+								<a class="social__link" href=""><i class="fab fa-facebook-f"></i></a>
+								<a class="social__link" href=""><i class="fab fa-twitter"></i></a>
+								<a class="social__link" href=""><i class="fab fa-google"></i></a>
+								<a class="social__link" href=""><i class="fab fa-instagram"></i></a>
+								<a class="social__link" href=""><i class="fab fa-pinterest"></i></a>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="bottom-footer__row">
+						<div class="bottom-footer__column">
+							<h6 class="footer__title">about us</h6>
+							<p class="bottom-footer__text">Orci varius nato que penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer vel nisi lorem. Donec dignissim non est ut pulvinar. Dlobortis metus libero commodo rhon cusnunc libero tarcu.</p>
+						</div>
+						<div class="bottom-footer__column">
+							<h6 class="footer__title">Useful links</h6>
+							<ul class="footer__menu">
+								<li><a href="" class="footer__menu-link">about</a></li>
+								<li><a href="" class="footer__menu-link">blog</a></li>
+								<li><a href="" class="footer__menu-link">agencies</a></li>
+								<li><a href="" class="footer__menu-link">contact</a></li>
+							</ul>
+						</div>
+						<div class="bottom-footer__column">
+							<h6 class="footer__title">help & support</h6>
+							<ul class="footer__menu">
+								<li><a href="" class="footer__menu-link">login</a></li>
+								<li><a href="" class="footer__menu-link">my account</a></li>
+								<li><a href="" class="footer__menu-link">Subscribe</a></li>
+								<li><a href="" class="footer__menu-link">contact</a></li>
+							</ul>
+						</div>
+						<div class="bottom-footer__column">
+							<h6 class="footer__title">Get in touch</h6>
+							<ul class="footer-contacts__list">
+								<li><a href="" class="footer-contacts"><i class="fas fa-map-marker-alt"></i>333 Middle Winchendon Rd, Rindge, NH 03461 </a></li>
+								<li><a href="" class="footer-contacts phone"><i class="fas fa-phone-square fa-rotate-90"></i>125-711-811</a> 
+									<a href="" class="footer-contacts">125-711-811</a></li>
+								<li><a href="" class="footer-contacts email"><i class="fas fa-envelope"></i>Support.arela@gmail.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<hr>
+					<div class="copyright">Copyright © 2019 Arela Inc. All rights reserved.</div>
+				</div>
+			</div>
+		</footer>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
